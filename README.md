@@ -1,126 +1,152 @@
 # tianmind-landing
 
-Public-safe bilingual landing page template for independent developers, small studios, and AI-assisted service builders.
+天智工坊（TianMind Studio）企业数字化与 AI 落地服务着陆页。
 
-独立开发者 / 小型工作室 / AI-assisted service builder 的中英双语品牌着陆页模板：零构建、零依赖、可 fork、可部署、可改成自己的公开服务页。
+面向中小企业的数字化转型与 AI Agent 落地咨询，中英双语，零构建、零依赖、可 fork、可部署。
 
-## What It Is
+## 核心定位
 
-This repo is a static landing page template. It helps an outside reader understand:
+- **企业数字化转型**：从官网建设到内部管理系统
+- **AI Agent 落地**：Claude Skill、Agent 工作流、Prompt 工程
+- **本地化交付**：可签合同、可开发票、源码完整交付
 
-- Who you are.
-- What you build.
-- Which proof links, demos, or public projects they can inspect.
-- How to start with a safe first brief.
-- What private material should not be shared publicly.
+## Features / 特性
 
-It is designed for public trust, not for exposing private commercial workflows.
+- Blueprint 工程图纸风格设计，深色背景、渐变高光
+- 中英双语切换（无需刷新）
+- 纯静态 HTML/CSS/JS，零构建依赖
+- 响应式布局，适配移动端
+- 开源贡献与能力证明区块
+- 悬浮咨询按钮（移动端）
+- 无障碍友好（ARIA labels、reduced motion 支持）
+- SEO 优化（Open Graph、Twitter Cards）
 
-## Features
+## Page Sections / 页面结构
 
-- Blueprint-inspired visual style with dark hero, bright accent lines, and structured service cards.
-- Chinese and English copy with a lightweight language switch.
-- Pure HTML, CSS, and JavaScript.
-- Responsive layout from mobile to desktop.
-- Public proof sections for projects, demos, templates, and verification links.
-- FAQ and contact sections that can stay public-safe.
-- No build step and no runtime dependency.
+1. **Hero** — 企业 AI 落地专家定位 + 免费咨询 CTA
+2. **Manifesto** — 三条底线：阶段交付、不转包、长期售后
+3. **Services** — 6 大服务方向（官网、后台、小程序、SaaS、AI、运维）
+4. **Tech Stack** — 技术栈展示
+5. **Featured Work** — 开源项目与作品
+6. **Capabilities** — 能力证明：开源贡献（Omi）、AI 落地、自研工具链
+7. **Pricing** — 透明报价 + 合作流程
+8. **FAQ** — 常见问题解答
+9. **Contact** — 联系方式（淘宝、邮件、GitHub）
 
-## Page Sections
-
-1. Hero: positioning, audience, and primary action.
-2. Manifesto: operating principles and public promise.
-3. Services: service categories or capability cards.
-4. Tech Stack: tools and delivery stack.
-5. Featured Work: public projects, demos, and proof links.
-6. Trust Path: safe first brief, review flow, and public boundary.
-7. FAQ: common buyer or collaborator questions.
-8. Contact: public contact paths only.
-
-## Quick Start
+## Quick Start / 快速开始
 
 ```bash
-git clone https://github.com/tianmind-studio/tianmind-landing.git
+# 克隆仓库
+git clone https://github.com/491034170/tianmind-landing.git
 cd tianmind-landing
+
+# 本地预览（任选一种方式）
+# 方式 1: Python
+python3 -m http.server 8000
+
+# 方式 2: Node.js
+npx serve .
+
+# 方式 3: 直接打开 index.html
+open index.html
 ```
 
-Edit:
+然后访问 `http://localhost:8000` 预览。
 
-- `index.html` for structure and default Chinese copy.
-- `assets/styles.css` for colors, spacing, and visual system.
-- `assets/app.js` for language switch and English copy.
+## 文件结构
 
-Then publish with GitHub Pages, Cloudflare Pages, or any static host.
-
-## Customization
-
-### Brand Color
-
-Edit CSS variables near the top of `assets/styles.css`.
-
-```css
-:root {
-  --accent: #4facfe;
-  --accent-bright: #00f2fe;
-  --accent-warm: #ffd89b;
-  --bg: #050b18;
-}
 ```
-
-### Copy
-
-- Keep the first screen concrete: who it is for, what you build, and what proof exists.
-- Link to public demos, case studies, repositories, screenshots, or verification commands.
-- Keep private examples out of public screenshots and public copy.
-- Keep Chinese and English content aligned when editing.
-
-### Proof Links
-
-Useful public links for TianMind Studio-style pages:
-
-- Public studio: <https://junius.tianmind.com/studio.html>
-- Service one-pagers: <https://junius.tianmind.com/service-one-pagers.html>
-- Demo proof kit: <https://junius.tianmind.com/demo-proof.html>
-- Repo proof pack: <https://junius.tianmind.com/repo-proof.html>
-- GitHub trust queue: <https://junius.tianmind.com/github-trust-queue.html>
-- Trust center: <https://junius.tianmind.com/trust.html>
-
-## File Structure
-
-```text
 tianmind-landing/
-├── index.html
+├── index.html          # 主页面
 ├── assets/
-│   ├── styles.css
-│   └── app.js
+│   ├── styles.css      # 样式（含响应式）
+│   └── app.js          # 交互 + i18n
+├── articles/           # 技术文章
 ├── README.md
 └── LICENSE
 ```
 
-## Public-Safe Boundary
+## 自定义 / Customization
 
-Do not publish:
+### 修改内容
 
-- No customer files.
-- No raw private conversations.
-- No credentials, tokens, cookies, SSH keys, or account access.
-- No contracts.
-- No sensitive commercial records.
-- No private backend access.
-- No database dumps.
-- No full private vault content.
-- No Hermes or safe-index configuration.
-- No unconfirmed claims.
+- `index.html` — 页面结构和默认中文内容
+- `assets/app.js` — i18n 对象中的中英文文案
+- `assets/styles.css` — 颜色变量和视觉样式
 
-Use public links, redacted samples, sanitized screenshots, sample outputs, and verification commands instead.
+### 品牌色
 
-## Contact
+编辑 `assets/styles.css` 顶部的 CSS 变量：
 
-Designed and maintained by TianMind Studio / 天智工坊.
+```css
+:root {
+  --accent: #4facfe;       /* 主色 */
+  --accent-bright: #00f2fe; /* 亮色 */
+  --accent-warm: #ffd89b;   /* 暖色 */
+  --bg: #050b18;            /* 背景 */
+}
+```
 
-- Studio surface: <https://junius.tianmind.com/studio.html>
-- GitHub profile: <https://github.com/tianmind-studio>
-- Public contact: `wx@tianmind.com`
+## 部署 / Deployment
+
+### GitHub Pages
+
+1. 在仓库 Settings → Pages 中启用
+2. Source 选择 `main` branch，`/ (root)`
+3. 等待几分钟，访问 `https://<username>.github.io/tianmind-landing/`
+
+### Cloudflare Pages
+
+1. 连接 GitHub 仓库到 Cloudflare Pages
+2. 构建设置：
+   - Build command: （留空）
+   - Output directory: `/`
+3. 部署完成后绑定自定义域名
+
+### VPS / 自有服务器
+
+```bash
+# 使用 nginx
+cp -r tianmind-landing /var/www/html/
+# 配置 nginx server block 指向该目录
+
+# 或使用 site-bootstrap（天智工坊自研工具）
+site-bootstrap deploy --domain your-domain.com
+```
+
+## 性能与无障碍
+
+- **预加载字体**：Google Fonts 已配置 `preconnect`
+- **Reduced motion**：支持 `prefers-reduced-motion` 媒体查询
+- **语义化 HTML**：使用正确的 heading 层级和 ARIA labels
+- **移动端优化**：悬浮咨询按钮、触摸友好间距
+- **图片**：OG 图片已优化为 1200x630
+
+## 注意事项
+
+### 内容准则
+
+- 不捏造客户名称或营收数字
+- 不发布虚假评价
+- 开源贡献标注来源，可公开核查
+- 保持中英文内容一致性
+
+### 隐私边界
+
+不要发布：
+- 客户私有文件或对话记录
+- 凭证、tokens、密钥
+- 未经授权的合同内容
+- 私有后台截图
+
+## 联系 / Contact
+
+天智工坊 · TianMind Studio
+
+- 官网: <https://tianmind.com>
+- GitHub: <https://github.com/491034170>
+- 邮箱: `wx@tianmind.com`
+- 淘宝: 搜索「天智工坊」
 
 ## License
 
