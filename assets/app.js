@@ -10,21 +10,36 @@
     zh: {
       "brand": "天智工坊",
       "nav.services": "服务",
+      "nav.capabilities": "能力",
       "nav.work": "作品",
       "nav.pricing": "报价",
-      "nav.faq": "FAQ",
-      "nav.contact": "联系",
+      "nav.contact": "咨询",
 
-      "hero.meta": "起始点 / Starting point",
-      "hero.eyebrow": "独立工坊 / 个人开发者 / 可签合同开票",
-      "hero.title1": "造物 · 思辨 · 超越",
-      "hero.lede": "一个人的工厂,一份交代得起的交付。<br>从 0 到 1 的官网、管理系统、小程序、AI 集成 —— 把想法做成能上线的软件。",
-      "hero.cta1": "开始合作",
-      "hero.cta2": "查看作品",
+      "hero.meta": "企业数字化 / Enterprise Digitalization",
+      "hero.eyebrow": "企业数字化 / AI Agent 落地 / 本地化交付",
+      "hero.title1": "企业 AI 落地专家",
+      "hero.lede": "帮助中小企业完成数字化转型与 AI Agent 集成。<br>从官网建设到智能后台、从流程自动化到 AI 工作流 —— 本地交付、可签合同、可开发票。",
+      "hero.cta1": "免费咨询",
+      "hero.cta2": "查看能力",
       "hero.stat1": "服务方向",
       "hero.stat2": "起价",
       "hero.stat3": "免费售后",
       "hero.stat4": "源码交付",
+
+      "capabilities.title": "能力证明 / Proof of Work",
+      "capabilities.sub": "不是自吹自擂，是可公开核查的开源贡献与技术落地。",
+      "capabilities.badge.opensource": "开源贡献",
+      "capabilities.badge.delivery": "已交付",
+      "capabilities.badge.toolchain": "工具链",
+      "capabilities.omi.desc": "参与腾讯 Omi 开源框架生态建设，贡献组件与工具链改进。<br><em>可在 GitHub 公开仓库核查提交记录。</em>",
+      "capabilities.ai.title": "AI Agent 工作流落地",
+      "capabilities.ai.desc": "Claude Skill 开发、企业级 Agent 工作流设计、Prompt 工程咨询。已发布多个开源 Claude Skill 供社区使用。",
+      "capabilities.devops.title": "自研建站部署工具链",
+      "capabilities.devops.desc": "site-bootstrap、vps-init、cloudflare-cn-kit 三件套，解决中小企业建站部署痛点。全部开源可审计。",
+      "capabilities.viewwork": "查看开源作品 →",
+      "capabilities.cta.text": "需要企业数字化或 AI 落地咨询？",
+      "capabilities.cta.btn": "立即预约免费咨询",
+      "floating.cta": "咨询",
 
       "manifesto.title": "三条底线 / Three hard rules",
       "manifesto.sub": "不是卖点,是我工作的前提。",
@@ -116,21 +131,36 @@
     en: {
       "brand": "TIANMIND",
       "nav.services": "Services",
+      "nav.capabilities": "Capabilities",
       "nav.work": "Work",
       "nav.pricing": "Pricing",
-      "nav.faq": "FAQ",
       "nav.contact": "Contact",
 
-      "hero.meta": "Starting point",
-      "hero.eyebrow": "Indie studio / solo dev / licensed + invoiceable",
-      "hero.title1": "Build. Think. Transcend.",
-      "hero.lede": "A one-person factory with delivery you can defend.<br>Websites, admin panels, mini-programs, AI integrations — ideas turned into shippable software.",
-      "hero.cta1": "Start a project",
-      "hero.cta2": "See work",
+      "hero.meta": "Enterprise Digitalization",
+      "hero.eyebrow": "Enterprise digitalization / AI Agent delivery / Local service",
+      "hero.title1": "Enterprise AI Expert",
+      "hero.lede": "Helping SMEs with digital transformation and AI Agent integration.<br>From website to smart backend, from workflow automation to AI agents — local delivery, contracts & invoices.",
+      "hero.cta1": "Free Consultation",
+      "hero.cta2": "See Capabilities",
       "hero.stat1": "Service tracks",
       "hero.stat2": "Starting at",
       "hero.stat3": "Free support",
       "hero.stat4": "Source delivered",
+
+      "capabilities.title": "Proof of Work",
+      "capabilities.sub": "Not self-promotion — verifiable open-source contributions and real deliveries.",
+      "capabilities.badge.opensource": "Open Source",
+      "capabilities.badge.delivery": "Delivered",
+      "capabilities.badge.toolchain": "Toolchain",
+      "capabilities.omi.desc": "Contributing to Tencent's Omi open-source framework ecosystem with components and toolchain improvements.<br><em>Verifiable on public GitHub repositories.</em>",
+      "capabilities.ai.title": "AI Agent Workflow Delivery",
+      "capabilities.ai.desc": "Claude Skill development, enterprise Agent workflow design, Prompt engineering consulting. Multiple open-source Claude Skills published.",
+      "capabilities.devops.title": "Self-developed Deployment Toolchain",
+      "capabilities.devops.desc": "site-bootstrap, vps-init, cloudflare-cn-kit — solving SME deployment pain points. All open-source and auditable.",
+      "capabilities.viewwork": "View open-source work →",
+      "capabilities.cta.text": "Need enterprise digitalization or AI implementation consulting?",
+      "capabilities.cta.btn": "Book Free Consultation",
+      "floating.cta": "Contact",
 
       "manifesto.title": "Three hard rules",
       "manifesto.sub": "Not selling points — preconditions for working with me.",
@@ -318,7 +348,7 @@
 
   function initReveal() {
     const targets = document.querySelectorAll(
-      ".section-header, .principle, .card, .work-item, .pricing__row, .faq-item, .contact-card, .stack__col"
+      ".section-header, .principle, .card, .work-item, .pricing__row, .faq-item, .contact-card, .stack__col, .capability-card, .capabilities__cta"
     );
 
     targets.forEach((el) => {

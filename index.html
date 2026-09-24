@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" data-lang="zh">
+<html lang="zh-CN" data-lang="zh" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -55,10 +55,10 @@
     </div>
     <nav class="topbar__nav">
       <a href="#services" data-i18n="nav.services">服务</a>
+      <a href="#capabilities" data-i18n="nav.capabilities">能力</a>
       <a href="#work" data-i18n="nav.work">作品</a>
       <a href="#pricing" data-i18n="nav.pricing">报价</a>
-      <a href="#faq" data-i18n="nav.faq">FAQ</a>
-      <a href="#contact" data-i18n="nav.contact">联系</a>
+      <a href="#contact" data-i18n="nav.contact">咨询</a>
     </nav>
     <div class="topbar__right">
       <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
@@ -89,29 +89,29 @@
         <div class="hero__eyebrow">
           <span class="eyebrow-tag">DWG-000</span>
           <span class="eyebrow-sep">⎯⎯</span>
-          <span data-i18n="hero.eyebrow">独立工坊 / 个人开发者 / 可签合同开票</span>
+          <span data-i18n="hero.eyebrow">企业数字化 / AI Agent 落地 / 本地化交付</span>
         </div>
 
         <h1 class="hero__title">
-          <span class="hero__title-line" data-i18n="hero.title1">造物 · 思辨 · 超越</span>
-          <span class="hero__title-en">BUILD &middot; THINK &middot; TRANSCEND</span>
+          <span class="hero__title-line" data-i18n="hero.title1">企业 AI 落地专家</span>
+          <span class="hero__title-en">ENTERPRISE AI IMPLEMENTATION</span>
         </h1>
 
         <p class="hero__lede" data-i18n="hero.lede">
-          一个人的工厂,一份交代得起的交付。<br>
-          从 0 到 1 的官网、管理系统、小程序、AI 集成 —— 把想法做成能上线的软件。
+          帮助中小企业完成数字化转型与 AI Agent 集成。<br>
+          从官网建设到智能后台、从流程自动化到 AI 工作流 —— 本地交付、可签合同、可开发票。
         </p>
 
         <div class="hero__actions">
-          <a href="#contact" class="btn btn--primary">
+          <a href="#contact" class="btn btn--primary btn--cta-pulse">
             <span class="btn__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" width="14" height="14"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="42 58" stroke-dashoffset="-31" transform="rotate(-90 12 12)"/><line x1="12" y1="5" x2="12" y2="11" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
             </span>
-            <span data-i18n="hero.cta1">开始合作</span>
+            <span data-i18n="hero.cta1">免费咨询</span>
             <span class="btn__arrow">→</span>
           </a>
-          <a href="#work" class="btn btn--ghost">
-            <span data-i18n="hero.cta2">查看作品</span>
+          <a href="#capabilities" class="btn btn--ghost">
+            <span data-i18n="hero.cta2">查看能力</span>
             <span class="btn__arrow">↓</span>
           </a>
         </div>
@@ -507,10 +507,72 @@
     </div>
   </section>
 
+  <!-- CAPABILITIES / OPEN-SOURCE CONTRIBUTIONS -->
+  <section class="capabilities" id="capabilities">
+    <div class="section-header">
+      <span class="section-id">§ 05 — CAPABILITIES</span>
+      <h2 class="section-title" data-i18n="capabilities.title">能力证明 / Proof of Work</h2>
+      <p class="section-sub" data-i18n="capabilities.sub">不是自吹自擂，是可公开核查的开源贡献与技术落地。</p>
+    </div>
+
+    <div class="capabilities__grid">
+      <article class="capability-card capability-card--highlight">
+        <div class="capability-card__badge" data-i18n="capabilities.badge.opensource">开源贡献</div>
+        <div class="capability-card__icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="18"/><path d="M24 10 L24 24 L32 30"/></svg>
+        </div>
+        <h3 class="capability-card__title">Omi 框架生态贡献者</h3>
+        <p class="capability-card__desc" data-i18n="capabilities.omi.desc">
+          参与腾讯 Omi 开源框架生态建设，贡献组件与工具链改进。
+          <br><em>可在 GitHub 公开仓库核查提交记录。</em>
+        </p>
+        <a class="capability-card__link" href="https://github.com/nicePacer/omiextfor" target="_blank" rel="noopener">
+          <span>查看贡献 →</span>
+        </a>
+      </article>
+
+      <article class="capability-card">
+        <div class="capability-card__badge" data-i18n="capabilities.badge.delivery">已交付</div>
+        <div class="capability-card__icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M24 4 L42 14 L42 34 L24 44 L6 34 L6 14 Z"/><path d="M24 4 L24 24 L6 14 M24 24 L42 14 M24 24 L24 44"/></svg>
+        </div>
+        <h3 class="capability-card__title" data-i18n="capabilities.ai.title">AI Agent 工作流落地</h3>
+        <p class="capability-card__desc" data-i18n="capabilities.ai.desc">
+          Claude Skill 开发、企业级 Agent 工作流设计、Prompt 工程咨询。已发布多个开源 Claude Skill 供社区使用。
+        </p>
+        <a class="capability-card__link" href="#work">
+          <span data-i18n="capabilities.viewwork">查看开源作品 →</span>
+        </a>
+      </article>
+
+      <article class="capability-card">
+        <div class="capability-card__badge" data-i18n="capabilities.badge.toolchain">工具链</div>
+        <div class="capability-card__icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="10" width="36" height="8" rx="1"/><rect x="6" y="22" width="36" height="8" rx="1"/><rect x="6" y="34" width="36" height="8" rx="1"/><circle cx="12" cy="14" r="1.5" fill="currentColor"/><circle cx="12" cy="26" r="1.5" fill="currentColor"/><circle cx="12" cy="38" r="1.5" fill="currentColor"/></svg>
+        </div>
+        <h3 class="capability-card__title" data-i18n="capabilities.devops.title">自研建站部署工具链</h3>
+        <p class="capability-card__desc" data-i18n="capabilities.devops.desc">
+          site-bootstrap、vps-init、cloudflare-cn-kit 三件套，解决中小企业建站部署痛点。全部开源可审计。
+        </p>
+        <a class="capability-card__link" href="https://github.com/tianmind-studio" target="_blank" rel="noopener">
+          <span>GitHub 仓库 →</span>
+        </a>
+      </article>
+    </div>
+
+    <div class="capabilities__cta">
+      <p data-i18n="capabilities.cta.text">需要企业数字化或 AI 落地咨询？</p>
+      <a href="#contact" class="btn btn--primary">
+        <span data-i18n="capabilities.cta.btn">立即预约免费咨询</span>
+        <span class="btn__arrow">→</span>
+      </a>
+    </div>
+  </section>
+
   <!-- PRICING -->
   <section class="pricing" id="pricing">
     <div class="section-header">
-      <span class="section-id">§ 05 — PRICING</span>
+      <span class="section-id">§ 06 — PRICING</span>
       <h2 class="section-title" data-i18n="pricing.title">报价,摊开放这里</h2>
       <p class="section-sub" data-i18n="pricing.sub">不是藏起来等客户问的数字。最终价看需求。</p>
     </div>
@@ -587,7 +649,7 @@
   <!-- FAQ -->
   <section class="faq" id="faq">
     <div class="section-header">
-      <span class="section-id">§ 06 — FAQ</span>
+      <span class="section-id">§ 07 — FAQ</span>
       <h2 class="section-title" data-i18n="faq.title">事先说清楚的六件事</h2>
       <p class="section-sub" data-i18n="faq.sub">省得你问了又问。</p>
     </div>
@@ -623,7 +685,7 @@
   <!-- CONTACT -->
   <section class="contact" id="contact">
     <div class="section-header">
-      <span class="section-id">§ 07 — CONTACT</span>
+      <span class="section-id">§ 08 — CONTACT</span>
       <h2 class="section-title" data-i18n="contact.title">开工前,先聊聊</h2>
       <p class="section-sub" data-i18n="contact.sub">需求不清楚也可以,我帮你梳理。首次沟通免费。</p>
     </div>
@@ -691,6 +753,14 @@
       </div>
     </div>
   </footer>
+
+  <!-- Floating CTA for mobile -->
+  <a href="#contact" class="floating-cta" aria-label="免费咨询">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+    </svg>
+    <span data-i18n="floating.cta">咨询</span>
+  </a>
 
   <script src="assets/app.js"></script>
 </body>
